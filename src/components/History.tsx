@@ -6,11 +6,11 @@ export type HistoryType = {
 };
 
 export const History = ({ commits }: HistoryType) => {
-    console.log(commits);
+
     return (
         <div>
             {commits && commits.map(c => {
-                return <Commit {...c} />;
+                return <Commit {...c} key={c.sha} />;
             })}
         </div>
     );

@@ -14,7 +14,6 @@ export const GIthubHistory = () => {
 
     const parseData = (rawData: Array<HistoryType>) => {
         const commits: Array<CommitType> = [];
-        console.log(rawData);
         rawData && Array.isArray(rawData) && rawData.map((c: HistoryType) => {
             return commits.push({
                 committer: c.commit.committer.name,
