@@ -21,6 +21,10 @@ Being in the second terminal please run
 
 Follow the instruction here https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token 
 
+Make sure to check this field when creating your personal token
+![image](https://user-images.githubusercontent.com/5615224/119268331-1378ea00-bbb8-11eb-858a-1cfc9fb12d16.png)
+
+
 ## Step 3: Create a .env file
 
 In the second terminal where you installed the backend dependencies, please create a new file called `.env` This way you can set the following environment variable:
