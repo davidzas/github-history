@@ -1,12 +1,12 @@
 # Github History
 
-This project shows the commits history of this very git repostory. In order to run locally please follow the instructions below:
+This project shows the commits history of this very git repository. To run locally please follow the instructions below:
 
 ## Pre-requisites:
 
-In order for this application to ever work you must install [NodeJs](https://nodejs.org/es/). Follow the instructions found [here](https://nodejs.org/es/download/).
+For this application to ever work you must install [NodeJs](https://nodejs.org/es/). Follow the instructions found [here](https://nodejs.org/es/download/).
 
-Minimun Version should be 14
+Minimum Version should be 14
 
 
 ## Step 1: Install dependencies
@@ -23,7 +23,7 @@ Being in the second terminal please run
 
 ### `npm i`
 
-## Step 2: Create a github personal token
+## Step 2: Create a GitHub personal token
 
 Follow the instruction here https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token 
 
@@ -33,7 +33,7 @@ Make sure to check this field when creating your personal token
 
 ## Step 3: Create a .env file
 
-Use your folder explorer to open the backend folder, then create a new file called `.env` inside this directory, you should en up with `/backend/.env` Now you have created you `.env` file you can add the following line to it:
+In the second terminal where you installed the backend dependencies, please create a new file called `.env` This way you can set the following environment variable:
 
 ### `TOKEN=**********`
 
@@ -41,7 +41,7 @@ The value of the TOKEN variable should be the token you created in the step befo
 
 ## Step 4: Run the backend
 
-In the terminal where you installed the back end dependencies you need to run 
+In the terminal where you installed the back end dependencies, you need to run 
 
 ### `npm start`
 
@@ -57,9 +57,9 @@ This will start compiling the React application and start the server to be open 
 
 # Further information
 
-This application will automatically update the latests commits made to this repository by default, if you want to connect another repo you will have to do the following:
+This application will automatically update the latest commits made to this repository by default, if you want to connect another repo you will have to do the following:
 
-## Step 1: Change the repository history url
+## Step 1: Change the repository history URL
 
 Inside the `/backend/socket/index.ts` you will find the line 
 #### `const REPO_URL = 'https://api.github.com/repos/davidzas/github-history/commits';`
@@ -67,4 +67,4 @@ Inside the `/backend/socket/index.ts` you will find the line
 Change the `REPO_URL` varaible for your own where 
 #### `https://api.github.com/repos/{REPOSITORY_OWNER_USERNAME}/{REPOSITORY_NAME}/commits`
 
-This way you will have the ability to connect to another repo and watch in real time its commit history
+This way you will have the ability to connect to another repo and watch in real-time its commit history
