@@ -1,7 +1,9 @@
+import dotenv from 'dotenv';
+dotenv.config();
 const REPO_URL = 'https://api.github.com/repos/davidzas/github-history/commits';
 const GITHUB_TOKEN = process.env.TOKEN;
 const request = require('request');
-
+console.log(GITHUB_TOKEN);
 export const createModule = (http: any) => {
     const io = require('socket.io')(http, {
         cors: {

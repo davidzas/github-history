@@ -1,9 +1,15 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.createModule = void 0;
+var dotenv_1 = __importDefault(require("dotenv"));
+dotenv_1.default.config();
 var REPO_URL = 'https://api.github.com/repos/davidzas/github-history/commits';
 var GITHUB_TOKEN = process.env.TOKEN;
 var request = require('request');
+console.log(GITHUB_TOKEN);
 var createModule = function (http) {
     var io = require('socket.io')(http, {
         cors: {
