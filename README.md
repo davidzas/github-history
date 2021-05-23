@@ -33,7 +33,7 @@ Make sure to check this field when creating your personal token
 
 ## Step 3: Create a .env file
 
-In the second terminal where you installed the backend dependencies, please create a new file called `.env` This way you can set the following environment variable:
+Use your folder explorer to open the backend folder, then create a new file called `.env` inside this directory, you should en up with `/backend/.env` Now you have created you `.env` file you can add the following line to it:
 
 ### `TOKEN=**********`
 
