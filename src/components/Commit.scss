@@ -1,0 +1,39 @@
+.commit-entry {
+    margin: 0.3125rem auto;
+    background-color: #fff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    padding: 1.25rem;
+    border-radius: 0.9375rem;
+
+    div {
+        display: flex;
+        justify-content: space-between;
+        margin: 0.3125rem 0;
+    }
+
+    span {
+        font-size: 12px;
+    }
+
+    a {
+        border-radius: 6px;
+        color: #0366d6;
+        background-color: #fafbfc;
+        border-color: rgba(27, 31, 35, 0.15);
+        transition: .2s cubic-bezier(.3, 0, .5, 1);
+        transition-property: color, background-color, border-color;
+        box-shadow: rgba(27, 31, 35, 0.1) 0px 1px 0px 0px, rgba(255, 255, 255, 0.03) 0px 1px 0px 0px inset;
+        padding: 1rem;
+        text-decoration: none;
+
+        &:hover {
+            color: #fff;
+            background: #0366d6;
+        }
+    }
+
+    .message {
+        font-size: 14px;
+    }
+
+}

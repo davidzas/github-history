@@ -3,6 +3,7 @@ import './GithubHistory.scss';
 import socketClient from "socket.io-client";
 import { History } from '../components/History';
 import { CommitType } from '../components/Commit';
+import { HistoryType } from '../types';
 const SERVER = "http://127.0.0.1:8080/";
 
 
@@ -11,16 +12,16 @@ export const GIthubHistory = () => {
     const [data, setData] = useState<Array<CommitType>>();
     const [socket, setSocket] = useState<any>();
 
-    const parseData = (rawData: any) => {
+    const parseData = (rawData: Array<HistoryType>) => {
         const commits: Array<CommitType> = [];
         console.log(rawData);
-        rawData && rawData.map((commit: any) => {
+        rawData && Array.isArray(rawData) && rawData.map((c: HistoryType) => {
             return commits.push({
-                committer: commit.commit.committer.name,
-                date: commit.commit.committer.date,
-                message: commit.message,
-                sha: commit.sha,
-                url: commit.html_url
+                committer: c.commit.committer.name,
+                date: c.commit.committer.date,
+                message: c.commit.message,
+                sha: c.sha,
+                url: c.html_url
             });
         });
         return commits;
