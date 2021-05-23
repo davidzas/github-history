@@ -2,6 +2,12 @@
 
 This project shows the commits history of this very git repostory. In order to run locally please follow the instructions below:
 
+## Pre-requisites:
+
+In order for this application to ever work you must install [NodeJs](https://nodejs.org/es/). Follow the instructions found [here](https://nodejs.org/es/download/).
+
+Minimun Version should be 14
+
 
 ## Step 1: Install dependencies
 
