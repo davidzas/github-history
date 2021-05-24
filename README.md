@@ -33,7 +33,11 @@ Make sure to check this field when creating your personal token
 
 ## Step 3: Create a .env file
 
-In the second terminal where you installed the backend dependencies, please create a new file called `.env` This way you can set the following environment variable:
+Use your ide or file explorer to enter the `backend` folder, being inside thsi directory create a `.env` like this:
+
+![image](https://user-images.githubusercontent.com/5615224/119286091-3384c980-bc09-11eb-830a-ade17e26399c.png)
+
+Once this files is created please put the following line inside of it:
 
 ### `TOKEN=**********`
 
