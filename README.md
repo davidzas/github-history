@@ -8,6 +8,9 @@ For this application to ever work you must install [NodeJs](https://nodejs.org/e
 
 Minimum Version should be 14
 
+To check your current version run on a terminal the following command:
+
+#### `node -v`
 
 ## Step 1: Install dependencies
 
